@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:#E5D3B3;
+}
+
+.converter-wrapper {
+    background-color: beige;
+    /* background:#E5D3B3; */
+    /* background:#FAEBD7;  */
+
+
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 370px;
+}
+
+h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+#amount-input {
+    background-color:white; 
+    border: 1px solid black;   
+}
+.amount-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+
+}
+
+.amount-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.currency-box { margin-bottom: 1.2rem;}
+
+.select-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid black;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+.flag-icon {
+    width: 35px;
+    height: 22px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.currency-select {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.exchange-rate-display {
+    margin: 1.5rem 0;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #675afe;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5044e4;
+}

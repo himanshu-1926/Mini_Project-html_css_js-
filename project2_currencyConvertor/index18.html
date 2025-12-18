@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style18.css">
+</head>
+<body>
+
+    <div class="converter-wrapper">
+        <header>
+            <h1>Currency Converter</h1>
+        </header>
+
+        <form id="converter-form">
+            <div class="amount-group">
+                <label for="amount-input">Enter Amount</label>
+                <input type="number" id="amount-input" value="1.00" placeholder="0.00">
+            </div>
+
+            <div class="selection-container">
+                <div class="currency-box from-box">
+                    <p class="label-text">From</p>
+                    <div class="select-wrapper">
+                        <img src="https://flagcdn.com/w80/us.png" alt="Flag" class="flag-icon">
+                        <select id="from-currency" class="currency-select"></select>
+                    </div>
+                </div>
+
+                <div class="currency-box to-box">
+                    <p class="label-text">To</p>
+                    <div class="select-wrapper">
+                        <img src="https://flagcdn.com/w80/in.png" alt="Flag" class="flag-icon">
+                        <select id="to-currency" class="currency-select"></select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exchange-rate-display">
+                <p id="rate-text">Getting exchange rate...</p>
+            </div>
+
+            <button type="submit" id="get-rate-btn">Get Exchange Rate</button>
+        </form>
+    </div>
+
+    <script src="currency_convertor.js"></script>
+</body>
+</html>
